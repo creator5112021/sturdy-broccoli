@@ -1,0 +1,74 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h2 class="btn btn-warning h2he">Emoji Indentification App
+        <br>
+
+        <span>&#9996;</span>
+        <span>&#9994;</span>
+        <span>&#9995;</span>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#128078;</span>
+      </h2>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: greenyellow">Are you Happy?</b>
+        <br>
+        <b style="color: blue">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam</label>
+        <div id="webcam"></div>
+        <br>
+        <button onclick="snapic()" class="btn btn-warning">Click Picture</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4>Prediction 1</h4>
+        <p class="emotion_name" id="emoji_name1"></p>
+        <p class="emoji" id="emoji1"></p>
+        <h4>Prediction 2</h4>
+        <p class="emotion_name" id="emoji_name2"></p>
+        <p class="emoji" id="emoji2"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br>
+        <button onclick="identify()" class="btn btn-success">Identify Emotion</button>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
